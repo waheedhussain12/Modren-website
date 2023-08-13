@@ -22,7 +22,7 @@
         <a href="#" class="company-logo">
           <img src="/Modren-website/img/nav-logo.png" alt="" />
         </a>
-        <div class="nav-links" id="nav-links">
+        <div class="nav-links" id="nav-link">
           <ul class="flex">
             <li><a href="#" class="hover-link">Products</a></li>
             <li><a href="#" class="hover-link">Customer</a></li>
@@ -32,7 +32,7 @@
             <li><a href="#" class="hover-link primary-button">Sign up</a></li>
           </ul>
         </div>
-        <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+        <a href="#" class="nav-toggle hover-link" id="toggle">
           <i class="fa-solid fa-bars"></i>
         </a>
       </div>
@@ -294,9 +294,14 @@
       src="https://kit.fontawesome.com/226f49c717.js"
       crossorigin="anonymous"
     ></script>
+
     <script>
-      const toggleButton = document.getElementById('nav-toggle');
-      const navlinks = document.getElementById('nav-links')
+      const toggleButton = document.getElementById('toggle');
+      const navlinks = document.getElementById('nav-link');
+      toggleButton.addEventListener('click', () => {
+        navlinks.classList.toggle('active');
+
+      })
     </script>
   </body>
 </html>
