@@ -82,6 +82,9 @@ ul {
   transition: 0.2s ease-out;
   text-align: center;
 }
+p{
+  font-size: 0.3rem;
+}
 .secondary-button {
   border: 0.5px solid var(--secondary-text-color);
   border-radius: 6px;
